@@ -11,11 +11,8 @@ import { SectionName } from "../App";
 import QuoteModal from "../components/QuoteModal";
 
 const AboutUs = lazy(() => import("../components/home/AboutUs"));
-const TransportationSolutions = lazy(() => import("../components/home/TransportationSolutions"));
 const ContactUs = lazy(() => import("../components/home/ContactUs"));
 const ServicesSection = lazy(() => import("../components/home/ServicesSection"));
-const Testimonials = lazy(() => import("../components/home/Testimonials"));
-const DriverCareers = lazy(() => import("../components/home/DriverCareers"));
 const FleetSection = lazy(() => import("../components/home/FleetSection"));
 const CoverageSection = lazy(() => import("../components/home/CoveregeSection"));
 

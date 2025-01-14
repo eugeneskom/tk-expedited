@@ -8,7 +8,6 @@ import LoadingSpinner from "./components/LoadingSpinner";
 import CarrierSetup from "./pages/CarrierSetup";
 
 const Home = lazy(() => import("./pages/Home"));
-const DriverSetup = lazy(() => import("./pages/DriverSetup"));
 
 export type SectionName = "home" | "about" | "services" | "contact" | "testimonials" | 
   "careers" | "privacy" | "driver-setup" | "fleet" | "coverage" | "dashboard";
