@@ -116,7 +116,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrollToSection }) => {
             <NavLink to="/" className="flex-shrink-0">
               <img 
                 src="logo.webp" 
-                className="w-24 sm:w-28 md:w-32 h-auto max-h-12" 
+                className="w-24 sm:w-28 md:w-32 h-auto max-h-32" 
                 alt="TK Expedited LLC" 
               />
             </NavLink>
