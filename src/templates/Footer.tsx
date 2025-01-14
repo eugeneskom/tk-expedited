@@ -33,17 +33,18 @@ const Footer: React.FC<FooterProps> = ({ scrollToSection }) => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log('Backend URL:', process.env.REACT_APP_SERVER_URI); // Debug the env variable
     setIsSubmitting(true);
     try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_SERVER_URI}/api/newsletter/subscribe`,
-        formData
-      );
+      const url = `${process.env.REACT_APP_SERVER_URI}/api/newsletter/subscribe`;
+      console.log('Full request URL:', url); // Debug the full URL
+      const response = await axios.post(url, formData);
       if (response.status === 201) {
         setSubmitMessage('Thank you for subscribing!');
         setFormData({ name: '', email: '', phone: '' });
       }
     } catch (error) {
+      console.error('Error details:', error); // Debug any errors
       setSubmitMessage('An error occurred. Please try again.');
     } finally {
       setIsSubmitting(false);
